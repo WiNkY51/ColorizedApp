@@ -9,6 +9,28 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="Vrk-ra-LYx">
+            <objects>
+                <viewController id="Jm4-dh-KYE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FZP-aR-HyE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lgM-uz-0hl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fpy-zc-XdQ">
+                        <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" id="00r-VQ-4Z4">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="nlO-q0-auF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7U-MQ-HQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249.61832061068702" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorizedApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="En1-9u-aIG">
-                                <rect key="frame" x="16" y="79" width="361" height="120"/>
+                                <rect key="frame" x="16" y="123" width="361" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mx0-cx-Hfr">
                                         <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="120"/>
@@ -79,6 +101,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="En1-9u-aIG" secondAttribute="trailing" constant="16" id="yyb-hh-9Rw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1AG-VW-LVn"/>
                     <connections>
                         <outlet property="blueColorLabel" destination="BOG-1H-bmv" id="YVu-jl-7Hf"/>
                         <outlet property="greenColorLabel" destination="Qab-C5-9EO" id="gHI-Yo-IsC"/>
@@ -87,10 +110,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="-2"/>
+            <point key="canvasLocation" x="1038.9312977099237" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yQT-cI-0iI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4WT-2u-ODf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z4Q-WI-Xqm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jm4-dh-KYE" kind="relationship" relationship="rootViewController" id="wmS-BD-t3K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcB-uc-sOs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-677.0992366412213" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

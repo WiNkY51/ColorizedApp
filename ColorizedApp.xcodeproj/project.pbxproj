@@ -37,6 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA30A4C72C742AB600131DDB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CAB6E0CF2C44B0EB00978E81 /* AppDelegate.swift */,
+				CAB6E0D12C44B0EB00978E81 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CA30A4C82C742AD100131DDB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB6E0D32C44B0EB00978E81 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CA30A4C92C742B2B00131DDB /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				CAB6E0D52C44B0EB00978E81 /* Main.storyboard */,
+				CAB6E0DA2C44B0EC00978E81 /* LaunchScreen.storyboard */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
 		CAB6E0C32C44B0EB00978E81 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +82,10 @@
 		CAB6E0CE2C44B0EB00978E81 /* ColorizedApp */ = {
 			isa = PBXGroup;
 			children = (
-				CAB6E0CF2C44B0EB00978E81 /* AppDelegate.swift */,
-				CAB6E0D12C44B0EB00978E81 /* SceneDelegate.swift */,
-				CAB6E0D32C44B0EB00978E81 /* ViewController.swift */,
-				CAB6E0D52C44B0EB00978E81 /* Main.storyboard */,
+				CA30A4C72C742AB600131DDB /* App */,
+				CA30A4C82C742AD100131DDB /* ViewControllers */,
+				CA30A4C92C742B2B00131DDB /* Layouts */,
 				CAB6E0D82C44B0EC00978E81 /* Assets.xcassets */,
-				CAB6E0DA2C44B0EC00978E81 /* LaunchScreen.storyboard */,
 				CAB6E0DD2C44B0EC00978E81 /* Info.plist */,
 			);
 			path = ColorizedApp;
