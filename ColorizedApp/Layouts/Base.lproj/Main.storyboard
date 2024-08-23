@@ -43,7 +43,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SettingViewController" customModule="ColorizedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-6S-fkV">
@@ -112,21 +112,21 @@
                                                 <rect key="frame" x="-2" y="0.0" width="218" height="35"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
-                                                    <action selector="setColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="NsI-dJ-RTF"/>
+                                                    <action selector="setEditColor" destination="BYZ-38-t0r" eventType="valueChanged" id="NsI-dJ-RTF"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="acr-Wb-CWQ">
                                                 <rect key="frame" x="-2" y="34" width="218" height="35"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
-                                                    <action selector="setColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="LeL-Wf-ZGG"/>
+                                                    <action selector="setEditColor" destination="BYZ-38-t0r" eventType="valueChanged" id="LeL-Wf-ZGG"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.90000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rum-kk-lxw">
                                                 <rect key="frame" x="-2" y="68" width="218" height="35"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <connections>
-                                                    <action selector="setColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="0mD-eb-b3j"/>
+                                                    <action selector="setEditColor" destination="BYZ-38-t0r" eventType="valueChanged" id="0mD-eb-b3j"/>
                                                 </connections>
                                             </slider>
                                         </subviews>

@@ -11,7 +11,7 @@ protocol SettingViewControllerDelegate: AnyObject {
     func updateColor(_ newColor: UserColor)
 }
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     private var color = UserColor.getColor()
     

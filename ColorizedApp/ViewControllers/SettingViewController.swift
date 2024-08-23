@@ -41,7 +41,7 @@ final class SettingViewController: UIViewController {
         view.endEditing(true)
     }
 
-    @IBAction func setColor(_ sender: UISlider!) {
+    @IBAction func editColor(_ sender: UISlider!) {
         guard let sliderIndex = colorSliders.firstIndex(of: sender) else { return }
         let sliderTag = colorSliders[sliderIndex].tag
         switch sliderTag{
@@ -116,8 +116,9 @@ private extension SettingViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
 }
-
+//MARK: - UITextFieldDelegate
 extension SettingViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
