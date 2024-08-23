@@ -112,7 +112,9 @@ private extension SettingViewController {
     
     func showAlert() {
         let alert = UIAlertController(title: "Не ккоректные данные", message: "Введите значение от 0 до 1.", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.setup(self.newBackgroundColor)
+        }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
@@ -141,7 +143,7 @@ extension SettingViewController: UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        resignFirstResponder()
+        textField.resignFirstResponder()
     }
     
 }
